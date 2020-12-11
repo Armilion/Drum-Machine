@@ -6,7 +6,7 @@ FreeCodeCamp frontend project. Small project that enables the user to play drums
 
 ## Technologies used
 
-HTML5, CSS3, SCSS, ReactJS
+HTML5, CSS3, SCSS, ReactJS hooks
 
 ## Features
 
