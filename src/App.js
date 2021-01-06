@@ -104,7 +104,7 @@ const DrumMachine = () => {
   });
   
   useEffect(() => {
-    if(playRecord){
+    if(isPlayingRecord){
       playDrumLine();
     }
   })
