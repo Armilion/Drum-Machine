@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  font-size: 1.2em;
+  background-color: #20082b;
+  box-sizing: border-box;
+}
+
+#full-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#full-page > div {
+  display: grid;
+  min-width: 1100px;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 1em;
+}
+
+#drum-machine {
+  background-color: #381b45;
+  border-radius: 10px;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 6px 2px black;
+  -moz-box-shadow: 0px 0px 6px 2px black;
+  -ms-box-shadow: 0px 0px 6px 2px black;
+  -o-box-shadow: 0px 0px 6px 2px black;
+  box-shadow: 0px 0px 6px 2px black;
+}
+
+#display {
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  justify-items: center;
+  background-color: #1E1F26;
+  border-radius: 10px;
+  border: 5px solid DimGrey;
+  margin-bottom: 1em;
+  -webkit-box-shadow: 0px 0px 6px 2px #20082b inset;
+  -moz-box-shadow: 0px 0px 6px 2px #20082b inset;
+  -ms-box-shadow: 0px 0px 6px 2px #20082b inset;
+  -o-box-shadow: 0px 0px 6px 2px #20082b inset;
+  box-shadow: 0px 0px 6px 2px #20082b inset;
+}
+#display > div:last-child {
+  grid-column: 1/3;
+}
+#display .fa, #display span {
+  color: #e4a1ff;
+}
+#display .fa {
+  cursor: pointer;
+  text-align: center;
+}
+#display .fa:hover {
+  color: white;
+}
+#display span {
+  font-family: "Russo One";
+  font-size: 0.8em;
+}
+
+#drum-pads {
+  padding: 1em;
+  display: grid;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #1E1F26;
+  border-radius: 10px;
+  border: 5px solid DimGrey;
+  -webkit-box-shadow: 0px 0px 6px 2px #20082b inset;
+  -moz-box-shadow: 0px 0px 6px 2px #20082b inset;
+  -ms-box-shadow: 0px 0px 6px 2px #20082b inset;
+  -o-box-shadow: 0px 0px 6px 2px #20082b inset;
+  box-shadow: 0px 0px 6px 2px #20082b inset;
+}
+#drum-pads > div {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 3px 5px #20082b;
+  -moz-box-shadow: 0px 0px 3px 5px #20082b;
+  -ms-box-shadow: 0px 0px 3px 5px #20082b;
+  -o-box-shadow: 0px 0px 3px 5px #20082b;
+  box-shadow: 0px 0px 3px 5px #20082b;
+  border-radius: 5px;
+}
+#drum-pads > p {
+  margin: 0.5em 0em 0.5em 0em;
+}
+
+.drum-pad {
+  color: white;
+  background-color: #8535b1;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Russo One";
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #7a00b0;
+}
+
+.change-key {
+  font-family: "Ubuntu";
+  background-color: #381b45;
+  color: #f0ceff;
+  border-radius: 0px 0px 5px 5px;
+  border: none;
+  border-top: none;
+  padding: 0.2em;
+}
+
+.change-key:hover {
+  background-color: #1c002b;
+}
+
+#saved-hits {
+  position: relative;
+  background-color: #1E1F26;
+  border: 2px solid DimGrey;
+  font-family: "Russo One";
+  width: 95%;
+  padding: 1em 1em 0 1em;
+}
+#saved-hits span {
+  color: white;
+  font-size: 0.8em;
+}
+#saved-hits > span {
+  position: absolute;
+  top: 23px;
+  right: 150px;
+  color: #e4a1ff;
+  font-size: 1em;
+  font-family: "Russo One";
+}
+#saved-hits > button {
+  position: absolute;
+  font-family: "Russo One";
+  border: none;
+  right: 20px;
+  top: 20px;
+  background-color: transparent;
+  color: #e4a1ff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+#saved-hits > button:hover, #saved-hits > i:hover {
+  color: white;
+}
+#saved-hits > i {
+  position: absolute;
+  color: #e4a1ff;
+  top: 25px;
+  left: 250px;
+  cursor: pointer;
+}
+#saved-hits > div {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  width: 100%;
+  height: 80%;
+  background-color: #181A1B;
+  border: 1px solid white;
+}
+
+h2 {
+  font-family: "Russo One";
+  margin: 0em 0em 0.5em 0em;
+  color: #e4a1ff;
+  border-bottom: 2px solid #e4a1ff;
+}
+
+.pad-line {
+  display: grid;
+  grid-template-columns: 10% repeat(18, 5%);
+}
+.pad-line > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pad-line > div {
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=index.css.map */
