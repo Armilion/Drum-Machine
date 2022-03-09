@@ -10,7 +10,7 @@ HTML5, CSS3, SCSS, ReactJS hooks
 
 ## Features
 
-- Q, W, E, A, S, D, Z, X, C keys are each binded to an audio element that gets trickered on key down or on click
+- Q, W, E, A, S, D, Z, X, C keys are each binded to an audio element that gets triggered on key down or on click
 - Keys are changeable as long as the new key is not already binded
 - Possibility to increase and decrease volume
 - Record feature (up to 18 notes)
